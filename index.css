@@ -1,4 +1,10 @@
-body
+
+
+#title
 {
-    background-color: beige;
+    height: auto;
+    display: inline-flex;
+    font-size: 26px;
+    font-family: "Jazz LET", "Times New Roman";
+    align-items: flex-end;
 }
