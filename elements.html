@@ -17,8 +17,8 @@
     <header id="header">
         <a href="index.html" class="logo"><strong>My Portfolio</strong> - Riley Jamieson</a>
         <ul class="icons">
-            <li><a href="#" class="icon brands fa-github-alt"><span class="label">Github</span></a></li>
-            <li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+            <li><a href="https://github.com/RileyJam" class="icon brands fa-github-alt" target="_blank"><span class="label">Github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/riley-jamieson-753117210/" class="icon brands fa-linkedin-in" target="_blank"><span class="label">Linkedin</span></a></li>
         </ul>
     </header>
     <nav id="menu">
@@ -33,37 +33,34 @@
             <h2>Recent blogs</h2>
         </header>
         <div class="mini-posts">
-            <article>
+            <p>This is currently a work in progress!</p>
+            <!-- EXAMPLE <article>
                 <a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
                 <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-            </article>
-            <article>
-                <a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-            </article>
-            <article>
-                <a href="#" class="image"><img src="images/pic09.jpg" alt="" /></a>
-                <p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore aliquam.</p>
-            </article>
+            </article> -->
         </div>
-        <ul class="actions">
+        <!-- <ul class="actions">
             <li><a href="blogs.html" class="button">More</a></li>
-        </ul>
+        </ul> -->
     </section>
     <form id="form">
         <div class="form-group">
             <label for="firstNameInput">First Name</label>
-            <input type="text" class="form-control" id="firstNameInput" placeholder="Eric">
+            <input type="text" class="form-control" name="firstName" id="firstNameInput" placeholder="Eric">
         </div>
         <div class="form-group">
             <label for="lastNameInput">Last Name</label>
-            <input type="text" class="form-control" id="lastNameInput" placeholder="Smith">
+            <input type="text" class="form-control" name="lastName" id="lastNameInput" placeholder="Smith">
         </div>
         <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="eric.smith@example.ca">
+            <label for="emailInput">Email address</label>
+            <input type="email" class="form-control" name="email" id="emailInput" placeholder="eric.smith@example.ca">
         </div>
-        <button type="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
+        <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea name="Contact-Message" name="subject" rows="6" cols="15"></textarea>
+        </div>
+        <button type="submit" name="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
     </form>
     <footer id="footer">
         <p class="copyright">All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
