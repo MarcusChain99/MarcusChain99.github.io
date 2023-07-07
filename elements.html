@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <script src="jquery-3.6.4.min.js"></script>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 </head>
 
 <body>
@@ -44,22 +45,27 @@
             <li><a href="blogs.html" class="button">More</a></li>
         </ul> -->
     </section>
-    <form id="form">
+    <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="7b65ebc0-5859-4915-a677-c7d999b5a797">
         <div class="form-group">
             <label for="firstNameInput">First Name</label>
-            <input type="text" class="form-control" name="firstName" id="firstNameInput" placeholder="Eric">
+            <input type="text" class="form-control" name="firstName" id="firstNameInput" placeholder="Eric" required>
+            <p class="error firstname-error"></p>
         </div>
         <div class="form-group">
             <label for="lastNameInput">Last Name</label>
-            <input type="text" class="form-control" name="lastName" id="lastNameInput" placeholder="Smith">
+            <input type="text" class="form-control" name="lastName" id="lastNameInput" placeholder="Smith" required>
+            <p class="error lastname-error"></p>
         </div>
         <div class="form-group">
             <label for="emailInput">Email address</label>
-            <input type="email" class="form-control" name="email" id="emailInput" placeholder="eric.smith@example.ca">
+            <input type="email" class="form-control" name="email" id="emailInput" placeholder="eric.smith@example.ca" required>
+            <p class="error email-error"></p>
         </div>
         <div class="form-group">
             <label for="messageInput">Message</label>
-            <textarea name="Contact-Message" name="subject" rows="6" cols="15"></textarea>
+            <textarea name="Contact-Message" name="subject" rows="6" cols="15" required></textarea>
+            <p class="error message-error"></p>
         </div>
         <button type="submit" name="submit" class="btn btn-primary" style="margin-top: 20px;">Submit</button>
     </form>

@@ -10,17 +10,13 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<script src="https://web3forms.com/client/script.js" async defer></script>
 	</head>
 	<body class="is-preload">
-
-		<!-- Wrapper -->
 			<div id="wrapper">
-
-				<!-- Main -->
 					<div id="main">
 						<div class="inner">
-
-							<!-- Header -->
 							<header id="header">
 								<a href="index.html" class="logo"><strong>My Portfolio</strong> - Riley Jamieson</a>
 								<ul class="icons">
@@ -28,8 +24,6 @@
 									<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
 								</ul>
 							</header>
-
-							<!-- Content -->
 								<section>
 									<header class="main">
 										<h1>In the works! - WIP</h1>
@@ -42,24 +36,10 @@
 
 						</div>
 					</div>
-
-				<!-- Sidebar -->
 					<div id="sidebar">
 						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-								<!-- Menu -->
 								<div id="load-menu"></div>
-
-							<!-- Recent blogs -->
 								<div id="load-recent-blogs"></div>
-
-							<!-- Contact Form -->
 								<section>
 									<header class="major">
 										<h2>Get in touch</h2>
@@ -67,8 +47,6 @@
 									<p>Please use the form below if you wish to get in contact with me!</p>
 									<div id="load-form"></div>
 								</section>
-
-							<!-- Footer -->
 								<div id="load-footer"></div>
 
 						</div>
@@ -86,7 +64,7 @@
 				$("#load-header").load("elements.html #header");
 				$("#load-menu").load("elements.html #menu");
 				$("#load-footer").load("elements.html #footer");
-				$("#load-form").load("elements.html #form");
+				$("#load-form").load("elements.html #contactForm");
 				$("#load-recent-blogs").load("elements.html #recent-blogs");
 			</script>
 	</body>
